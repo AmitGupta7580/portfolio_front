@@ -1,0 +1,60 @@
+body, html {
+  height: 100%;
+  background: black;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+.link{
+  display: none;
+}
+.link-circle{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: rgb(29, 29, 29);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.link-btn{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  transform: translate(13px, 13px);
+  cursor: pointer;
+}
+.intro{
+  height: 100%;
+}
+#front{
+  height: 100%;
+  background-image: url('../images/home.jpg');
+  animation: glitchbackground 4s infinite;
+  background-attachment: fixed;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+[class^='intro']{
+  height:100%;
+  width: 100%;
+  background: #000;
+}
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #fff;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.front-next-cur {
+  height: 50px; 
+  width: 50px; 
+  position: absolute;
+  padding: 50vh 0px 0px 90vw; 
+  color: white;
+  cursor: pointer;
+}

@@ -3,111 +3,76 @@
 <title>Amit Gupta</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Exo 2|Press Start 2P|Dawning+of+a+New+Day|Love+Ya+Like+A+Sister' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" type="image/png" href="images/name logo.jpg"/>
+<link rel="stylesheet" href="css/intro.css">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/glitch.css">
+<link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.css">
 <script src="js/typewriter.js"></script>
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    background: black;
-    scroll-behavior: smooth;
-    overflow-y: hidden;
-}
-#home{
-    height: 100%;
-    background: url('images/home.jpg');
-    animation: glitchbackground 4s infinite;
-    background-attachment: fixed;
-    background-position: center;
-    scroll-behavior: smooth;
-}
-#contact{
-    height: 100%;
-    background:radial-gradient(circle,#333 4%, black 80%); 
-    overflow-y: hidden;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-.lds-ripple {
-  display: inline-flex;
-  z-index: 99;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  background: black;
-  justify-content: center;
-  align-items: center;
-  animation: zoomin 100s ease-in infinite;
-}
-.lds-ripple.hide{
-    animation: fadeOut1 4s;
-    animation-fill-mode: forwards;
-}
-@keyframes fadeOut1 {
-    100% {
-        z-index:1000;
-        transform: scale(500);
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-@-webkit-keyframes zoomin {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.5);}
-}
-@keyframes zoomin {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.5);}
-  100% {transform: scale(2);}
-} /*End of Zoom in Keyframes */
-.loader1{
-    background: black;
-    color:white;
-    line-height:0;
-    margin:30px;
-    height: 100%;
-    text-align:center;
-    padding: 0.2em 0.2em;
-}
-.midloader{
-    background: white;
-    color:black;
-    text-align:center;
-    padding: 0.2em 0.2em;
-}
-</style>
+<script src="JS/jquery-3.2.1.slim.min.js"></script>
+<script src="JS/jquery.plate.js"></script>
+<script src="JS/anime.min.js"></script>
+<script src="JS/jquery.min.js"></script>
+<script src="js/intro.js"></script>
 <body>  
   <!-- Nav Bar-->
   <div class="w3-top w3-container">
-    <div style="background:rgba(10,10,10,0.8)">
-      <div class="w3-display-topleft w3-padding-large w3-xlarge w3-text-white">
-        <a href="https://github.com/AmitGupta7580"><img src="images/github_logo.png" style="height:50px;width:50px"></a>
-      </div>
+    <div class="w3-display-topleft w3-padding-large w3-xlarge w3-text-white" onclick="toggle_links()">
+      <span class="link-circle"></span>
+      <i class="fas fa-link link-btn"></i>
+    </div>
+    <div class="link w3-display-topleft w3-xlarge w3-text-white" style="padding: 72px 0px 0px 24px;">
+      <a href="https://www.linkedin.com/in/amit-gupta-7580/" target="_blank">
+        <span class="link-circle" style="background-color: #2867B2"></span>
+        <i class="fab fa-linkedin link-btn" style="transform: translate(15px, 13px);"></i>
+      </a>
+    </div>
+    <div class="link w3-display-topleft w3-xlarge w3-text-white" style="padding: 128px 0px 0px 24px;">
+      <a href="https://github.com/AmitGupta7580" target="_blank">
+        <span class="link-circle"></span>
+        <i class="fab fa-github link-btn"></i>
+      </a>
+    </div>
+    <div class="link w3-display-topleft w3-xlarge w3-text-white" style="padding: 184px 0px 0px 24px;">
+      <a href="https://www.youtube.com/channel/UC7WE1ZcP5e9t7WTo3Fg8o7g" target="_blank">
+        <span class="link-circle" style="background-color: #FF0000;"></span>
+        <i class="fab fa-youtube link-btn" style="transform: translate(11px, 13px);"></i>
+      </a>
+    </div>
+    <div class="link w3-display-topleft w3-xlarge w3-text-white" style="padding: 240px 0px 0px 24px;">
+      <a href="mailto: amit758000@gmail.com">
+        <span class="link-circle" style="background-color: #ff811b;"></span>
+        <i class="fab fa-google link-btn"></i>
+      </a>
+    </div>
+    <div class="link w3-display-topleft w3-xlarge w3-text-white" style="padding: 296px 0px 0px 24px;">
+      <a href="https://registry.jsonresume.org/AmitGupta7580" target="_blank">
+        <span class="link-circle" style="background-color: #008b79;"></span>
+        <i class="far fa-file link-btn" style="transform: translate(16px, 13px);"></i>
+      </a>
     </div>
   </div>
 
   <!--Intro 1 Welcome to my Page-->
-  <div class="intro1" style="display:none;">
-    <div class="ml12 w3-display-middle">Welcome to my Page</div>
+  <div class="intro">
+    <div class="ml12 w3-display-middle">Welcome to my Webiste</div>
   </div>
 
   <!--Front Page-->
-  <div id="home">
+  <div id="front">
+    <!-- move to home page cursor -->
+    <a href="/home"><i class="fas fa-chevron-right front-next-cur"></i></a>
+
     <!-- particles.js container -->
     <div id="particles-js" style="width:100%;height: 100%;"></div>
-    <div id="text" class="w3-text-white w3-display-middle">
+
+    <!-- Typewriter contatiner -->
+    <div class="w3-text-white w3-display-middle"">
       <div class="w3-container">
         <h1>
-          <p  id="typer1" href="" class="typewrite glitch" data-period="2000" data-type='[ "Amit Gupta","Explore, Learn, Exploit", "I Love to Develop." ]'>
-            <p  id="typer2" href="" class="typewrite glitch" data-period="2000" data-type='[ "Amit Gupta","Explore, Learn, Exploit", "I Love to Develop." ]'>
-              <p  id="typer3" href="" class="typewrite glitch" data-period="2000" data-type='[ "Amit Gupta","Explore, Learn, Exploit", "I Love to Develop." ]'>
+          <p  id="typer1" href="" class="typewrite glitch" data-period="2000" data-type='[ "Explore, Learn, Exploit", "Amit Gupta", "I Love to Develop.", "I Love to Code.", "I Love to Learn." ]'>
+            <p  id="typer2" href="" class="typewrite glitch" data-period="2000" data-type='[ "Explore, Learn, Exploit", "Amit Gupta", "I Love to Develop.", "I Love to Code.", "I love to Learn." ]'>
+              <p  id="typer3" href="" class="typewrite glitch" data-period="2000" data-type='[ "Explore, Learn, Exploit", "Amit Gupta", "I Love to Develop.", "I Love to Code.", "I love to Learn." ]'>
                 <span class="wrap"></span>
               </p>
             </p>
@@ -122,9 +87,15 @@ body, html {
       </div>
     </div>
   </div>
-  
+
+  <!-- Home Page -->
+      
   <!-- scripts -->
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    display_intro();
+  </script>
+  
 </body>
 </html>
