@@ -57,6 +57,6 @@ function display_intro(){
   });
   setTimeout(function(){
     $('.intro').hide();
-    document.getElementById("front").style.backgroundImage = "url('../images/frontt.jpg')";
+    document.getElementById("front").style.backgroundImage = "url('../images/front.jpg')";
   },4600);
 }
