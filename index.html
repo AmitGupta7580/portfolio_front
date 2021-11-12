@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Amit Gupta</title>
-  </head>
-  <body>
-    Portfolio Amit Gupta
-  </body>
+<title>Amit Gupta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Exo 2|Press Start 2P|Dawning+of+a+New+Day|Love+Ya+Like+A+Sister' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/glitch.css">
+<script src="js/typewriter.js"></script>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    background: black;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+#home{
+    height: 100%;
+    background: url('images/home.jpg');
+    animation: glitchbackground 4s infinite;
+    background-attachment: fixed;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+#contact{
+    height: 100%;
+    background:radial-gradient(circle,#333 4%, black 80%); 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.lds-ripple {
+  display: inline-flex;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  animation: zoomin 100s ease-in infinite;
+}
+.lds-ripple.hide{
+    animation: fadeOut1 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut1 {
+    100% {
+        z-index:1000;
+        transform: scale(500);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+}
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(2);}
+} /*End of Zoom in Keyframes */
+.loader1{
+    background: black;
+    color:white;
+    line-height:0;
+    margin:30px;
+    height: 100%;
+    text-align:center;
+    padding: 0.2em 0.2em;
+}
+.midloader{
+    background: white;
+    color:black;
+    text-align:center;
+    padding: 0.2em 0.2em;
+}
+</style>
+<body>  
+  <!-- Nav Bar-->
+  <div class="w3-top w3-container">
+    <div style="background:rgba(10,10,10,0.8)">
+      <div class="w3-display-topleft w3-padding-large w3-xlarge w3-text-white">
+        <a href="https://github.com/AmitGupta7580"><img src="images/github_logo.png" style="height:50px;width:50px"></a>
+      </div>
+    </div>
+  </div>
+
+  <!--Intro 1 Welcome to my Page-->
+  <div class="intro1" style="display:none;">
+    <div class="ml12 w3-display-middle">Welcome to my Page</div>
+  </div>
+
+  <!--Front Page-->
+  <div id="home">
+    <!-- particles.js container -->
+    <div id="particles-js" style="width:100%;height: 100%;"></div>
+    <div id="text" class="w3-text-white w3-display-middle">
+      <div class="w3-container">
+        <h1>
+          <p  id="typer1" href="" class="typewrite glitch" data-period="2000" data-type='[ "Amit Gupta","Explore, Learn, Exploit", "I Love to Develop." ]'>
+            <p  id="typer2" href="" class="typewrite glitch" data-period="2000" data-type='[ "Amit Gupta","Explore, Learn, Exploit", "I Love to Develop." ]'>
+              <p  id="typer3" href="" class="typewrite glitch" data-period="2000" data-type='[ "Amit Gupta","Explore, Learn, Exploit", "I Love to Develop." ]'>
+                <span class="wrap"></span>
+              </p>
+            </p>
+          </p>
+        </h1>
+      </div>
+      <br><hr class="w3-border-grey" style="margin:auto;width:50%"><br>
+      <div class="container">
+        <p id="date1" class="w3-large w3-center glitch">Programmer, Roboticist, Learner.</p>
+        <p id="date2" class="w3-large w3-center glitch">Programmer, Roboticist, Learner.</p>
+        <p id="date3" class="w3-large w3-center glitch">Programmer, Roboticist, Learner.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
