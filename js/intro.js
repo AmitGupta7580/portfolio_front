@@ -58,6 +58,5 @@ function display_intro(){
   setTimeout(function(){
     $('.intro').hide();
     document.getElementById("front").style.backgroundImage = "url('../images/home.jpg')";
-    console.log(document.getElementById("front").style.backgroundImage);
   },4600);
 }
