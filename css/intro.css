@@ -28,7 +28,7 @@ body, html {
 }
 #front{
   height: 100%;
-  background-image: url('../images/front.jpg');
+  background-image: url('https://ammmy.me/images/front.jpg');
   animation: glitchbackground 4s infinite;
   background-attachment: fixed;
   background-position: center;
@@ -51,10 +51,7 @@ body, html {
   line-height: 1em;
 }
 .front-next-cur {
-  height: 50px; 
-  width: 50px; 
   position: absolute;
-  padding: 50vh 0px 0px 90vw; 
-  color: white;
+  margin: 43vh 0px 0px 90vw;
   cursor: pointer;
 }
