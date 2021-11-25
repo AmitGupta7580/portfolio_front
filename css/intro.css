@@ -28,7 +28,7 @@ body, html {
 }
 #front{
   height: 100%;
-  background-image: url('https://ammmy.me/images/front.jpg');
+  background-image: url('https://v1.ammmy.me/images/front.jpg');
   animation: glitchbackground 4s infinite;
   background-attachment: fixed;
   background-position: center;
